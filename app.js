@@ -24,16 +24,16 @@ var user            =  require("./models/user");
 app.use(bodyparser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 mongoose.set('useUnifiedTopology',true);
-mongoose.connect("mongodb://localhost:27017/touristplace",{useNewUrlParser: true});
-// var url = "mongodb+srv://kotaBrothers:kotasehbhenchod@pranay-prateek-q8srw.mongodb.net/<dbname>?retryWrites=true&w=majority"
-// mongoose.connect(url, {
-// 	useNewUrlParser: true,
-// 	useCreateIndex: true
-// }).then(() => {
-// 	console.log('Connected to DB!');
-// }).catch(err => {
-// 	console.log("ERROR:", err.message);    
-// });
+//mongoose.connect("mongodb://localhost:27017/touristplace",{useNewUrlParser: true});
+var url = "mongodb+srv://kotaBrothers:kotasehbhenchod@pranay-prateek-q8srw.mongodb.net/<dbname>?retryWrites=true&w=majority"
+mongoose.connect(url, {
+	useNewUrlParser: true,
+	useCreateIndex: true
+}).then(() => {
+	console.log('Connected to DB!');
+}).catch(err => {
+	console.log("ERROR:", err.message);    
+});
 app.use(express.static(__dirname + "/public"));
 app.use(flash());
 // seedDB();
@@ -238,10 +238,10 @@ app.get("/about",function(req,res){
 
 //PORT LISTENING ROUTE
 
-app.listen(3000,function(req,res){
-	console.log("Server is running");
-});
-
-// app.listen(process.env.PORT, process.env.IP, function(){
-//    console.log("Server Has Started!");
+// app.listen(3000,function(req,res){
+// 	console.log("Server is running");
 // });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("Server Has Started!");
+});
