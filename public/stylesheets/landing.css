@@ -43,7 +43,7 @@ body {
 }
 /* https://i.imgur.com/SBEmFpv.jpg */
 .slideshow li:nth-child(2) {
-	background-image: url(https://media.gettyimages.com/photos/marine-drive-mumbai-picture-id530819947?s=2048x2048);
+	background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0d/40/ce/c3/mumbai-marine-drive-along.jpg);
 	animation-delay: 10s;
 }
 
