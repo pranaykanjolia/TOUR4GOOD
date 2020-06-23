@@ -43,7 +43,7 @@ body {
 }
 /* https://i.imgur.com/SBEmFpv.jpg */
 .slideshow li:nth-child(2) {
-	background-image: url(https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1073721995_20191213105915_20191213105938.jpg);
+	background-image: url("https://www.tripsavvy.com/thmb/oxy_iaN0zQJzH3C1FSz1p2v1s5o=/3256x2442/smart/filters:no_upscale()/GettyImages-1008831236-5c65d6bf4cedfd00014aa310.jpg");
 	animation-delay: 10s;
 }
 

@@ -13,7 +13,7 @@
                     <h4><%= touristplace.name %></h4>
                 </div>
                 <% if(!currentuser){ %>
-                    <p><a href="/user" class="btn btn-info">Add Your Experience</a></p>
+						<p><a href="/user" class="btn btn-info">Add Your Experience</a></p>
                 <% } else { %>
                     <div class="card-body">
                         <p class="center"><a href="/result/<%= touristplace._id%>/experience/new" class="btn btn-info">Add                            Your Experience</a>
@@ -23,7 +23,7 @@
             </div>
         <% }); %>
 	
-			
+		
 	
          <div class="card card-body">
             <h4><strong>EXPERIENCES =></strong></h4>

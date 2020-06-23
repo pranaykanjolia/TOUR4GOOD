@@ -2,22 +2,14 @@ body {
     margin: 0;
     color: #6a6f8c;
     background: #c8c8c8;
-    font: 600 16px/18px 'Open Sans', sans-serif;
-
+    font: 600 16px/18px 'Open Sans', sans-serif
 }
 
 .colour-change {
-background: #1a2a6c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+	background-color: #ffffff;
+	background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
- 
-	/* background: #00B4DB;  /* fallback for old browsers */
-	/* background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */ */
-	/* background: linear-gradient(to top, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
 
 .login-box {
     width: 100%;
@@ -173,6 +165,7 @@ background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+
     transform: rotate(0)
 }
 
+*,
 :after,
 :before {
     box-sizing: border-box
@@ -206,12 +199,12 @@ a {
 
 .card1 {
     width: 500px;
-    left: 100px;
+    left: 100px
 }
 
 ::placeholder {
     color: #b3b3b3
-} 
+}
 
 
 
