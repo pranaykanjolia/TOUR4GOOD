@@ -24,19 +24,19 @@ var user            =  require("./models/user");
 app.use(bodyparser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 mongoose.set('useUnifiedTopology',true);
-//mongoose.connect("mongodb://localhost:27017/touristplace",{useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/touristplace",{useNewUrlParser: true});
 var url = "mongodb+srv://kotaBrothers:kotasehbhenchod@pranay-prateek-q8srw.mongodb.net/<dbname>?retryWrites=true&w=majority"
-mongoose.connect(url, {
-	useNewUrlParser: true,
-	useCreateIndex: true
-}).then(() => {
-	console.log('Connected to DB!');
-}).catch(err => {
-	console.log("ERROR:", err.message);    
-});
+// mongoose.connect(url, {
+// 	useNewUrlParser: true,
+// 	useCreateIndex: true
+// }).then(() => {
+// 	console.log('Connected to DB!');
+// }).catch(err => {
+// 	console.log("ERROR:", err.message);    
+// });
 app.use(express.static(__dirname + "/public"));
 app.use(flash());
-// seedDB();
+seedDB();
 
 
 // PASSPORT CONFIGURATION
@@ -191,7 +191,7 @@ app.get("/user",function(req,res){
 app.post("/login",passport.authenticate("local",
 	{
 		successRedirect: "/result",
-		failureRedirect: "/login"
+		failureRedirect: "/user"
 	}),function(req,res){
 });
 
