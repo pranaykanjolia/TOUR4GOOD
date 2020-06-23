@@ -237,6 +237,6 @@ app.get("/about",function(req,res){
 
 
 //PORT LISTENING ROUTE
-app.listen(3000,function(req,res){
-	console.log("Server is runnning");
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("Server Has Started!");
 });
