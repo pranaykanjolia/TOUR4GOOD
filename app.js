@@ -37,7 +37,7 @@ mongoose.connect(url, {
 });
 app.use(express.static(__dirname + "/public"));
 app.use(flash());
-seedDB();
+//seedDB();
 
 
 // PASSPORT CONFIGURATION
