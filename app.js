@@ -11,6 +11,7 @@ var seedDB          =  require('./seed');
 var passport        =  require("passport");
 var localstrategy   =  require("passport-local");
 var user            =  require("./models/user");
+var PORT            =  process.env.PORT||3000
        
 // app.use(session(
 // { 
@@ -36,7 +37,7 @@ mongoose.connect(url, {
 });
 app.use(express.static(__dirname + "/public"));
 app.use(flash());
-seedDB();
+// seedDB();
 
 
 // PASSPORT CONFIGURATION
@@ -242,6 +243,6 @@ app.get("/about",function(req,res){
 // 	console.log("Server is running"); 
 // });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(PORT, process.env.IP, function(){
    console.log("Server Has Started!");
 });
